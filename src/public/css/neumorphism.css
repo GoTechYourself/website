@@ -21331,6 +21331,12 @@ button.section-slack:focus {
         margin-top: -150px !important;
     }
 
+.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
     .mr--150 {
         margin-right: -150px !important;
     }
@@ -22749,7 +22755,7 @@ button.section-slack:focus {
 }
 
 .navbar-brand img {
-    height: 20px;
+    height: 50px;
 }
 
 .navbar-dark .navbar-brand-light {
