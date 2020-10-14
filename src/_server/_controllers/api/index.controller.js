@@ -1,8 +1,5 @@
 var response = require('./../../framework/result')
 
-let userM = require('./../../_models/mongodb/example.schema');
-
-
 module.exports = {
 
 
