@@ -20,16 +20,13 @@ let resultobject = function( { result = [], message = "", type = 0,req = null } 
     let returnobj = {
         message : message,
         result : result,
-        status_type : type,
-        status_message : enumtypes
+        status_type : type
     }
 
     returnobj.message = Translate(resourcelang,message);
 
     if(type == 0)
         returnobj.status_type = enumtypes.success;
-
-    
 
     //save the request in history
     

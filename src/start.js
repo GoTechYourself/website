@@ -30,6 +30,12 @@ server.use('/public', express.static('./public'))
 
 server.use(require('./_server/framework/logger').RequestLogger.Initialize)
 
+require('./_server/framework/mongoose').Connect();
+
+let apiRouter = express.Router()
+require('./_server/_routers/api/index.router')(apiRouter)
+server.use('/api', apiRouter)
+
 let httpRouter = express.Router()
 require('./_server/_routers/http/home.router')(httpRouter)
 server.use('/', httpRouter)
